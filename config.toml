@@ -3,20 +3,20 @@ profile = "compiler"
 change-id = 133207
 
 [llvm]
-targets = "AArch64;RISCV"
+targets = "AArch64;RISCV;X86"
 download-ci-llvm = false
 
 [target.x86_64-unknown-linux-gnu]
-llvm-config="/home/berkay/riscv/llvm/build/bin/llvm-config"
-llvm-filecheck="/home/berkay/riscv/llvm/build/bin/FileCheck"
-cc = "gcc-14"
+llvm-config="../llvm/build/bin/llvm-config"
+llvm-filecheck="../llvm/build/bin/FileCheck"
 
 [target.aarch64-apple-darwin]
-llvm-config="/Users/berkay/workspace/riscv/llvm/build/bin/llvm-config"
-llvm-filecheck="/Users/berkay/workspace/riscv/llvm/build/bin/FileCheck"
+llvm-config="../llvm/build/bin/llvm-config"
+llvm-filecheck="..//llvm/build/bin/FileCheck"
 
 [build]
 target = [
+    "x86_64-unknown-linux-gnu",
     "aarch64-apple-darwin",
     "riscv32i-unknown-none-elf",
     "riscv64gc-unknown-none-elf",
