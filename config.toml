@@ -1,0 +1,24 @@
+# Includes one of the default files in src/bootstrap/defaults
+profile = "compiler"
+change-id = 133207
+
+[llvm]
+targets = "AArch64;RISCV"
+download-ci-llvm = false
+
+[target.x86_64-unknown-linux-gnu]
+llvm-config="/home/berkay/riscv/llvm/build/bin/llvm-config"
+llvm-filecheck="/home/berkay/riscv/llvm/build/bin/FileCheck"
+cc = "gcc-14"
+
+[target.aarch64-apple-darwin]
+llvm-config="/Users/berkay/workspace/riscv/llvm/build/bin/llvm-config"
+llvm-filecheck="/Users/berkay/workspace/riscv/llvm/build/bin/FileCheck"
+
+[build]
+target = [
+    "aarch64-apple-darwin",
+    "riscv32i-unknown-none-elf",
+    "riscv64gc-unknown-none-elf",
+    "riscv64imac-unknown-none-elf"
+]
