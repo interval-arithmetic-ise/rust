@@ -22,6 +22,7 @@
 	path = library/stdarch
 	url = https://github.com/interval-arithmetic-ise/stdarch.git
 	shallow = true
+	branch = main
 [submodule "src/doc/rustc-dev-guide"]
 	path = src/doc/rustc-dev-guide
 	url = https://github.com/rust-lang/rustc-dev-guide.git
