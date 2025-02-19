@@ -20,7 +20,7 @@
 	shallow = true
 [submodule "library/stdarch"]
 	path = library/stdarch
-	url = https://github.com/rust-lang/stdarch.git
+	url = https://github.com/interval-arithmetic-ise/stdarch.git
 	shallow = true
 [submodule "src/doc/rustc-dev-guide"]
 	path = src/doc/rustc-dev-guide

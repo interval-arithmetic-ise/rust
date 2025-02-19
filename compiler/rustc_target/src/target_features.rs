@@ -435,7 +435,7 @@ const RISCV_FEATURES: &[(&str, Stability, ImpliedFeatures)] = &[
     ("v", Unstable(sym::riscv_target_feature), &[]),
     ("xfintf", Unstable(sym::riscv_target_feature), &["d"]),
     ("xhintf", Unstable(sym::riscv_target_feature), &["zfhmin"]),
-    ("xfintx", Unstable(sym::riscv_target_feature), &[""]),
+    ("xfintx", Unstable(sym::riscv_target_feature), &[]),
     ("xhintx", Unstable(sym::riscv_target_feature), &[]),
     ("zaamo", Unstable(sym::riscv_target_feature), &[]),
     ("zabha", Unstable(sym::riscv_target_feature), &["zaamo"]),
