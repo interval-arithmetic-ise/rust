@@ -22,3 +22,11 @@ target = [
     "riscv64gc-unknown-none-elf",
     "riscv64imac-unknown-none-elf"
 ]
+extended = true
+tools = [
+    "cargo",
+    "rustfmt",
+    "rustdoc",
+    "rust-analyzer",
+    "rust-analyzer-proc-macro-srv",
+]
